@@ -44,12 +44,17 @@ Install the below packages using pip install in terminal:
  -Dashboard interface is Designed to display relevant information from the SQL and MongoDB databases.
 
  #### To Run the Streamlit app in the terminal:
-Use command: streamlit run .py
+Use command: streamlit run .py__add file anme
 
-### User Guide
+### User Guide--check 
 Step 1. Data collection
 Search channel_id, copy and paste on the input box and click the Get data and stored button in the Data collection zone.
 Step 2. Data Migrate zone
 Select the channel name and click the Migrate to MySQL button to migrate the specific channel data to the MySQL database from MongoDB in the Data Migrate zone.
 Step 3. Channel Data Analysis zone
 Select a Question from the dropdown option you can get the results in Dataframe format or bar chat format.
+
+
+### Conclusion
+
+The YouTube Data Harvesting and Warehousing project provides a powerful tool for retrieving, storing, and analyzing YouTube channel and video data. By leveraging SQL, MongoDB, and Streamlit, users can easily access and manipulate YouTube data in a user-friendly interface. The project offers flexibility, scalability, and data visualization capabilities, empowering users to gain insights from the vast amount of YouTube data available.
