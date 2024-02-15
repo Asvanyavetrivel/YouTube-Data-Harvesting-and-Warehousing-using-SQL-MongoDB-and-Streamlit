@@ -15,7 +15,7 @@ The following technologies are used in this project:
 * Streamlit:A Python library used for creating interactive web applications and data visualizations.
 
 
-####Prerequisites
+#### Prerequisites
 Install the below packages using pip install in terminal:
 - pymongo
 - psycopg2
@@ -42,3 +42,6 @@ Install the below packages using pip install in terminal:
  #### 5.Streamlit Dashboard:
  -Streamlit is a Python library for building interactive web applications.I have used it to create a user interface for this project YouTube data warehouse
  -Dashboard interface is Designed to display relevant information from the SQL and MongoDB databases.
+
+ #### To Run the Streamlit app in the terminal:
+Use command: streamlit run .py
