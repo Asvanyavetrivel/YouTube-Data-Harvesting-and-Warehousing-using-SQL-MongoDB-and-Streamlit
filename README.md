@@ -3,6 +3,16 @@
 # Introduction
 YouTube Data Harvesting and Warehousing is a project that aims to Building a system to harvest YouTube data, store it in databases like SQL and MongoDB, and creating a user interface using Streamlit
 
+# Technologies Used
+
+The following technologies are used in this project:
+
+Python: The programming language used for building the application and scripting tasks.
+Pandas: A data manipulation library used for data processing and analysis.
+YouTube API: Google API is used to retrieve channel and video data from YouTube.
+MongoDB: A NoSQL database used as a data lake for storing retrieved YouTube data.
+SQL (PostgreSQL): A relational database used as a data warehouse for storing migrated YouTube data.
+Streamlit: A Python library used for creating interactive web applications and data visualizations.
 
 
 
