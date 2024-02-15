@@ -15,7 +15,13 @@ The following technologies are used in this project:
 * Streamlit:A Python library used for creating interactive web applications and data visualizations.
 
 
-
+####Prerequisites
+Install the below packages using pip install in terminal:
+- pymongo
+- psycopg2
+- pandas as pd
+- streamlit as st
+- googleapiclient.discovery import build
 
 ### Work flow
 #### 1.YouTube Data Harvesting:
