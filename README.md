@@ -1,10 +1,28 @@
 # YouTube-Data-Harvesting-and-Warehousing-using-SQL-MongoDB-and-Streamlit
 
-Problem Statement:
-The problem statement is to create a Streamlit application that allows users to access and analyze data from multiple YouTube channels. The application should have the following features:
-  Ability to input a YouTube channel ID and retrieve all the relevant data (Channel name, subscribers, total video count, playlist ID, video ID, likes, dislikes, comments of each video) using Google API.
- Option to store the data in a MongoDB database as a data lake.
- Ability to collect data for up to 10 different YouTube channels and store them in the data lake by clicking a button.
- Option to select a channel name and migrate its data from the data lake to a SQL database as tables.
-Ability to search and retrieve data from the SQL database using different search options, including joining tables to get channel details
+# Introduction
+YouTube Data Harvesting and Warehousing is a project that aims to Building a system to harvest YouTube data, store it in databases like SQL and MongoDB, and creating a user interface using Streamlit
 
+
+
+
+
+# Work flow
+# 1.YouTube Data Harvesting:
+-Use the YouTube Data API to fetch data from YouTube. 
+-This API allows us to retrieve information about videos, channels, playlists, etc.
+-Python script were written to interact with the YouTube API, fetch the data, and store it in a structured format.
+
+# 2.Data Storage:
+-The retrieved data from the YouTube API,is stored in a MongoDB data lake.
+-MongoDB is a NoSQL database that allows more flexibility with schema design.
+
+# 3.Data Warehousing:
+-After Data Storage which has the collected data for multiple channels,is migrated to a SQL data warehouse,I have used PostgreSQL in this project
+
+# 4. Integration with SQL and MongoDB:
+ -Python script were written to interact with the SQL and MongoDB databases for storing and retrieving data.SQL queries were written to join the tables in the SQL data warehouse and retrieve data for specific channels based on user input.
+
+ # 5.Streamlit Dashboard:
+ -Streamlit is a Python library for building interactive web applications.I have used it to create a user interface for this project YouTube data warehouse
+ -Dashboard interface is Designed to display relevant information from the SQL and MongoDB databases.
