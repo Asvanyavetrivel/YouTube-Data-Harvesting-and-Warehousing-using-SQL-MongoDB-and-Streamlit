@@ -45,3 +45,11 @@ Install the below packages using pip install in terminal:
 
  #### To Run the Streamlit app in the terminal:
 Use command: streamlit run .py
+
+### User Guide
+Step 1. Data collection
+Search channel_id, copy and paste on the input box and click the Get data and stored button in the Data collection zone.
+Step 2. Data Migrate zone
+Select the channel name and click the Migrate to MySQL button to migrate the specific channel data to the MySQL database from MongoDB in the Data Migrate zone.
+Step 3. Channel Data Analysis zone
+Select a Question from the dropdown option you can get the results in Dataframe format or bar chat format.
