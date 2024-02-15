@@ -8,7 +8,7 @@ YouTube Data Harvesting and Warehousing is a project that aims to Building a sys
 The following technologies are used in this project:
 
   •	Python:The programming language used for building the application and scripting tasks.
-  •	Pandas: A data manipulation library used for data processing and analysis.
+                                                                                            •	Pandas: A data manipulation library used for data processing and analysis.
 # •	YouTube API:
 Google API is used to retrieve channel and video data from YouTube.
 # •	MongoDB:
