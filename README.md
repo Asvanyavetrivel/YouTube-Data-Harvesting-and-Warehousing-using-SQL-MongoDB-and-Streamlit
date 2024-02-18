@@ -44,7 +44,7 @@ Install the below packages using pip install in terminal:
  -Dashboard interface is Designed to display relevant information from the SQL and MongoDB databases.
 
  #### To Run the Streamlit app in the terminal:
-Use command: streamlit run .py__add file anme
+Use command: streamlit run .py__add file name
 
 ### User Guide--check 
 Step 1. Data collection
