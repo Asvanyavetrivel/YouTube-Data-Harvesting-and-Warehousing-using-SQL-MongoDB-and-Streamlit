@@ -1,5 +1,4 @@
-# YouTube-Data-Harvesting-and-Warehousing-using-SQL-MongoDB-and-Streamlit
-
+# YouTube-Data-Harvesting-and-Warehousing
 ## Introduction
 YouTube Data Harvesting and Warehousing is a project that aims to Building a system to harvest YouTube data, store it in databases like SQL and MongoDB, and creating a user interface using Streamlit
 
