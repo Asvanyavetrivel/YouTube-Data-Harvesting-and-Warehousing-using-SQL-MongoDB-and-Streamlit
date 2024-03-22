@@ -29,8 +29,11 @@ def Api_connect():
 youtube=Api_connect()
 
 # Function to get channel details from YouTube
+
+#Function Definition:
 def get_channel_info(channel_id):
-    
+
+    #API Request
     request = youtube.channels().list(
                 part = "snippet,contentDetails,Statistics",
                 id = channel_id)
@@ -50,7 +53,10 @@ def get_channel_info(channel_id):
         return data
 
 # Function to get playlist details of a channel from YouTube
+
+#Function Definition:
 def get_playlist_info(channel_id):
+    #Initialize Empty List
     All_data = []
     next_page_token = None
     next_page = True
@@ -78,6 +84,7 @@ def get_playlist_info(channel_id):
     return All_data
     
 # Function to get Video Ids of a channel from YouTube
+#Function Definition:
 def get_channel_videos(channel_id):
     video_ids = []
     # get Uploads playlist id
@@ -102,6 +109,7 @@ def get_channel_videos(channel_id):
     return video_ids
 
 # Function to get video details of all video IDS from YouTube
+#Function Definition:
 def get_video_info(video_ids):
 
     video_data = []
@@ -133,6 +141,7 @@ def get_video_info(video_ids):
     return video_data
 
 # Function to get comments for all video IDs from YouTube
+#Function Definition:
 def get_comment_info(video_ids):
         Comment_Information = []
         try:
