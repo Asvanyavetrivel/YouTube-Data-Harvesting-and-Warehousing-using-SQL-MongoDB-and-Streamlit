@@ -88,21 +88,21 @@ def get_playlist_info(channel_id):
 def get_channel_videos(channel_id):
     video_ids = []
     # get Uploads playlist id
-    res = youtube.channels().list(id=channel_id, 
+    response = youtube.channels().list(id=channel_id, 
                                   part='contentDetails').execute()
-    playlist_id = res['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+    playlist_id = response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
     next_page_token = None
     
     while True:
-        res = youtube.playlistItems().list( 
+        response = youtube.playlistItems().list( 
                                            part = 'snippet',
                                            playlistId = playlist_id, 
                                            maxResults = 50,
                                            pageToken = next_page_token).execute()
         
-        for i in range(len(res['items'])):
-            video_ids.append(res['items'][i]['snippet']['resourceId']['videoId'])
-        next_page_token = res.get('nextPageToken')
+        for i in range(len(response['items'])):
+            video_ids.append(response['items'][i]['snippet']['resourceId']['videoId'])
+        next_page_token = response.get('nextPageToken')
         
         if next_page_token is None:
             break
