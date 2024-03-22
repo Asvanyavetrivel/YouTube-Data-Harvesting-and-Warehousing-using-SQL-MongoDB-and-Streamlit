@@ -503,7 +503,9 @@ elif selected == "Extract and Transform":
                     mydb.commit()
                 except:
                  st.write("comments was already exist in comments table")
-
+                    
+    #Migrates data from MongoDB to the SQL databas
+    
     def tables():
         channels_table()
         playlists_table()
