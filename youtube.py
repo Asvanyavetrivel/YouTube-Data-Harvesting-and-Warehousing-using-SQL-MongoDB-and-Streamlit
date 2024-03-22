@@ -239,6 +239,8 @@ elif selected == "Extract and Transform":
         cursor.execute(drop_query)
         mydb.commit()
 
+        #create a table named "channels" in a PostgreSQL database
+        
         try:
             create_query = '''create table if not exists channels(Channel_Name varchar(100),
                             Channel_Id varchar(80) primary key, 
@@ -302,6 +304,7 @@ elif selected == "Extract and Transform":
         cursor.execute(drop_query)
         mydb.commit()
 
+        #create a table named "Playlists" in a PostgreSQL database
         try:
             create_query = '''create table if not exists playlists(PlaylistId varchar(100) primary key,
                             Title varchar(80), 
@@ -361,6 +364,8 @@ elif selected == "Extract and Transform":
         cursor.execute(drop_query)
         mydb.commit()
 
+        #create a table named "videos" in a PostgreSQL database
+        
         try:
             create_query = '''create table if not exists videos(
                             Channel_Name varchar(150),
@@ -452,7 +457,9 @@ elif selected == "Extract and Transform":
         drop_query = "drop table if exists comments"
         cursor.execute(drop_query)
         mydb.commit()
-
+        
+        #create a table named "comments" in a PostgreSQL database
+        
         try:
             create_query = '''CREATE TABLE if not exists comments(Comment_Id varchar(100) primary key,
                         Video_Id varchar(80),
